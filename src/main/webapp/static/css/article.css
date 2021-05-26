@@ -1,0 +1,34 @@
+.right-content {
+    display: inline-block;
+    width: 964px;
+    height: auto;
+    padding: 18px 18px 95px 18px;
+    margin-left: 15px;
+    background: #fff;
+    vertical-align: top;
+    position: relative;
+}
+.right-content .content-title {
+    height: 20px;
+    padding: 14px 0;
+    font-size: 0;
+}
+.right-content .content-title .content-title-icon {
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    background-image: url(//tgl.qq.com/kohsa/static/images/sprite.png);
+    background-size: 800px;
+    background-position: -84px 0;
+    margin-left: 3px;
+}
+.right-content .content-title .content-title-text {
+    display: inline-block;
+    width: 930px;
+    vertical-align: top;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    line-height: 1;
+    margin-left: 18px;
+}

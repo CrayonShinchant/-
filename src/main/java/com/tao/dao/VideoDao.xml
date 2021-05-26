@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tao.dao.VideoDao">
+
+    <insert id="insertVideo">
+        insert into video(author_Id,author_Nick,video_title,video_src,video_descript,video_time,video_picture) values (#{author_Id},#{author_Nick},#{video_title},#{video_src},#{video_descript},#{video_time},#{video_picture});
+    </insert>
+
+    <select id="showVideo" resultType="com.tao.domain.Video">
+        select * from video
+    </select>
+    <select id="selectVideo" resultType="com.tao.domain.Video">
+        select * from video where id = #{id}
+    </select>
+    <select id="selectVideoByName" resultType="com.tao.domain.Video">
+        select * from video where video_title like #{video_title}
+    </select>
+
+</mapper>

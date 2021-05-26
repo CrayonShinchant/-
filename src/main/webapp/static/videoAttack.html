@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频中心——王者荣耀情报系统</title>
+    <link rel="shortcut icon" href="#" />
+    <link type="text/css" rel="stylesheet" href="./css/hero.css">
+    <link type="text/css" rel="stylesheet" href="./css/videoAttack.css">
+    <script type="text/javascript" src="./jquery/jquery3.5.js"></script>
+    <script type="text/javascript" src="./js/hero.js"></script>
+    <script type="text/javascript" src="./js/videoAttack.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/paging.css">
+    <script type="text/javascript" src="./js/query.js"></script>
+    <script type="text/javascript" src="./js/paging.js"></script>
+
+</head>
+
+<body>
+<div id="header" class="header tganime-header-fix">
+    <div class="header-nav">
+        <div class="header-inner">
+            <h1><img class="logo pa" src="./img/logo.png"></h1>
+            <ul class="main-nav clearfix">
+                <li>
+                    <a href="#" target="_blank" title="游戏资料">游戏资料
+                        <em>GAMEDATA</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="官方资讯">官方资讯
+                        <em>INFORMATION</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="内容中心">内容中心
+                        <em>CONTENTS</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="社区活动">社区活动
+                        <em>CONTENTS</em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 二级导航 -->
+        <div id="J_subNav" class="sub-nav">
+            <ul class="sub-nav-inner">
+                <li class="down-nav">
+                    <a href="introduce.html" target="_blank" title="游戏介绍">游戏介绍</a>
+                    <a href="hero.html" target="_blank" title="英雄介绍">英雄介绍</a>
+                </li>
+                <li class="down-nav">
+                    <a href="#" target="_blank" title="官方公告">官方公告</a>
+                    <a href="#" target="_blank" title="体验服公告">体验服公告</a>
+                </li>
+                <li class="down-nav">
+                    <a href="#" target="_blank" title="英雄攻略">英雄攻略</a>
+                    <a href="videoAttack.html" target="_blank" title="视频中心">视频中心</a>
+                    <a href="/kings/toLogin.do" target="_blank" title="作者入驻">作者入驻</a>
+                </li>
+                <li class="down-nav">
+                    <a href="#" target="_blank" title="王者社区">王者社区</a>
+                    <a id="wq" href="javascript:void(0)"  title="微信圈子">微信圈子</a>
+                    <a id="wx" href="javascript:void(0)"  title="微信公众号">微信公众号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 背景图片 -->
+<div class="wrapper">
+    <div class="zkcontent">
+        <div class="zk-con-box">
+            <div class="zk-con1 zk-con">
+                <div class="con1-pos">
+                    <i class="tb1 icon f1"></i>
+                    <a href="/kings/" target="_blank" title="王者荣耀情报首页">王者荣耀情报首页</a>
+                    <span>></span>
+                    <label>视频中心</label>
+                </div>
+                <div class="vcategory" id="v_hothero_videos" exposure-tag="hero_videos,热门英雄">
+                    <div class="v-new-title">
+                        <div class="v-new-l fl">
+                            <a href class="fl">
+                                <img id="hero" width="16" height="24" src="//game.gtimg.cn/images/yxzj/web201605/page/icon_hero.png" title="热门英雄" alt="热门英雄">
+                            </a>
+                            <span class="fl v-new-txt">&nbsp;&nbsp;热门英雄</span>
+                        </div>
+                        <div class="v-select-roles">
+                            <div class="v-input-box">
+                                <input type="text" id="v-selectRoles" placeholder="角色类型">
+                            </div>
+                            <a class="soso-go searchBtn" id="searchBtn" title="搜索" href="javascript:;"><i class="vspr vicon-soso"><img src="//game.gtimg.cn/images/yxzj/web201605/page/icon_search.png" style="width: auto;height: auto"></i></a>
+                            <ul class="v-select-roles-all">
+                                <li data-id="675">刺客</li>
+                                <li data-id="675">坦克</li>
+                                <li data-id="623">战士</li>
+                                <li data-id="619">法师</li>
+                                <li data-id="641">射手</li>
+                                <li data-id="676">辅助</li>
+                            </ul>
+                        </div>
+                        <div class="v-select-hero">
+                            <div class="v-input-box">
+                                <input type="text" id="v-selectHeros" placeholder="请选择英雄">
+                            </div>
+                            <a class="soso-go searchBtn" title="搜索" href="javascript:;"><i class="vspr vicon-soso"><img src="//game.gtimg.cn/images/yxzj/web201605/page/icon_search.png" style="width: auto; height: auto"></i></a>
+                            <ul class="v-select-hero-all" id="allHero">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="vlist hotcategotry" id="heroVideoList">
+
+
+                    </ul>
+                    <div id="page" class="col-sm-12 text-right">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header-dialog">
+    <div class="weiquan pr" id="weiquan"
+         style="display: none;visibility: visible;position: fixed;z-index: 9999;left: 50%;top: 50%;margin-top: -148.5px;margin-left: -153px;"
+         data-milodialog="1" role="dialog" tabindex="-1">
+        <div class="dia-weiquan">
+            <a class="dia-close" href="javascript:void(0);" title="关闭"></a>
+        </div>
+    </div>
+    <div class="weixin pr" id="weixin"
+         style="display: none;visibility: visible;position: fixed;z-index: 9999;left: 50%;top: 50%;margin-top: -148.5px;margin-left: -153px;"
+         data-milodialog="1" role="dialog" tabindex="-1">
+        <div class="dia-weiquan">
+            <a class="dia-close" href="javascript:void(0);" title="关闭"></a>
+        </div>
+    </div>
+</div>
+<div id="_overlay_"
+     style="background-color: rgb(0, 0, 0); border-top: 1px solid rgb(230, 245, 255); position: absolute; height: 2577px; z-index: 9998; width: 100%; left: 0px; top: 0px; opacity: 0.7; display: none;"></div>
+<div>
+    <div id="gfooter" class="footer-wrap">
+        <div class="foot">
+            <div class="foot_cpright">
+                <div class="foot_lefts">
+                    <img src="./img/logo.png" id="foot_img">
+                </div>
+            </div>
+            <div class="foot_bottom">
+                @Produced by <b>软件工程三班IIB聂涛</b> All Rights Reserved<br>
+                @Designed by <b>软件工程三班IIB聂涛</b> Glory of King System
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

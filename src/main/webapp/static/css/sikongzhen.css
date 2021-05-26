@@ -1,0 +1,631 @@
+.zk-con1 {
+    padding-top: 84px;
+    overflow: hidden;
+    background-position: center 0;
+}
+.con1-pic {
+    width: 100%;
+    height: 798px;
+    overflow: hidden;
+}
+.pic-show-box {
+    width: 1200px;
+    height: 548px;
+    position: relative;
+    margin: 127px auto 0;
+}
+.fl {
+    float: left;
+}
+.cover {
+    width: 357px;
+    height: 548px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 23px;
+    overflow: hidden;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAABGdBTUEAALGPC/xhBQAAAANQTFRFCg4dV2j5WwAAAAF0Uk5TvfU2F1cAAAALSURBVAjXY2DABwAAHgABboVHMgAAAABJRU5ErkJggg==) repeat;
+}
+.cover-title {
+    font-size: 24px;
+    color: #f3c258;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.cover-name {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFF;
+    line-height: 74px;
+}
+.herodetail-sort {
+    width: 290px;
+    height: 70px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: block;
+}
+.herodetail-sort i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -9999em;
+    background-image: url(//game.gtimg.cn/images/yxzj/web201605/page/hero-sort.png);
+    background-repeat: no-repeat;
+}
+.herodetail-sort-1 {
+    background-position: 0 -140px;
+}
+.cover-list {
+    height: 136px;
+}
+.cover-list li {
+    height: 24px;
+    vertical-align: top;
+    margin-bottom: 12px;
+}
+.cover-list-text {
+    height: 21px;
+    line-height: 19px;
+    *line-height: 17px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+}
+.cover-list-bar {
+    position: relative;
+    width: 205px;
+    height: 8px;
+    margin: 8px 0 0 45px;
+    background: #000;
+    border-radius: 0 4px 4px 0;
+}
+.icon, .skill-u1 li, .equip-list li {
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/herodetail/item.png) no-repeat;
+    text-indent: -9999px;
+    display: block;
+}
+.cover-list-bar b {
+    position: absolute;
+    top: -8px;
+    left: -27px;
+    width: 27px;
+    height: 26px;
+}
+.data-bar1 b {
+    background-position: 0 -170px;
+}
+.ibar {
+    height: 8px;
+    float: left;
+    width: 50%;
+    border-radius: 0 4px 4px 0;
+}
+.data-bar1 i {
+    background: #1c8fea;
+}
+.data-bar2 b {
+    background-position: -30px -170px;
+}
+.data-bar2 i {
+    background: #e7ca63;
+}
+.data-bar3 b {
+    background-position: -60px -170px;
+}
+.data-bar3 i {
+    background: #5dd473;
+}
+.data-bar4 b {
+    background-position: -90px -170px;
+}
+.data-bar4 i {
+    background: #e84a33;
+}
+.cover-btn {
+    overflow: hidden;
+    margin-top: 25px;
+}
+.cover-btn a {
+    float: left;
+    margin-right: 16px;
+    width: 150px;
+    height: 40px;
+    border: solid 2px #fff;
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+.cover-btn a {
+    float: left;
+    margin-right: 16px;
+    width: 150px;
+    height: 40px;
+    border: solid 2px #fff;
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+.pop-story {
+    display: none;
+    visibility: visible;
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    top: 191px;
+    margin-left: -631.5px;
+    margin-top: 0px;
+    width: 1259px;
+    border: solid 2px #3338a4;
+}
+.pop-hd {
+    position: relative;
+    height: 129px;
+    width: 100%;
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/herodetail/pop.png);
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 800;
+    line-height: 129px;
+}
+.pop-hd .close {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: 35px;
+    right: 20px;
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/herodetail/pop.png);
+    background-position: -1260px 0;
+}
+.pop-bd {
+    padding: 40px 0;
+    background: #fff;
+}
+.pop-bd p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 60px;
+    color: #070707;
+    text-indent: 0;
+    margin-top: 30px;
+}
+.zk-con {
+    clear: both;
+    overflow: unset;
+}
+.zkcontent {
+    background: #fafafa;
+}
+.ls {
+    width: 772px;
+}
+.crumb {
+    height: 20px;
+    line-height: 20px;
+    color: #464547;
+    font-size: 16px;
+    padding: 35px 0;
+}
+.tb1 {
+    background-position: 0 0;
+    margin-right: 6px;
+    margin-top: -5px;
+    margin-left: -4px;
+}
+.crumb a, .crumb span {
+    margin-right: 8px;
+}
+.crumb a {
+    text-decoration: underline;
+}
+.tlt {
+    color: #000;
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.icon, .skill-u1 li, .equip-list li {
+    background: url(//game.gtimg.cn/images/yxzj/web201706/images/herodetail/item.png) no-repeat;
+    text-indent: -9999px;
+    display: block;
+}
+.tb1, .tb2, .tb3, .tb4, .tb5, .tb6, .tb7, .tb8 {
+    width: 30px;
+    height: 30px;
+}
+.tb2 {
+    background-position: -30px 0;
+    margin: -4px 5px 0 0;
+}
+.skill-info, .sugg-info {
+    position: relative;
+    min-height: 280px;
+    background: #fff;
+    border: solid 1px #e5e5e5;
+    margin-bottom: 50px;
+}
+.skill-u1 {
+    height: 100px;
+    padding: 20px 0 0 20px;
+}
+.skill-u1 li {
+    width: 92px;
+    height: 88px;
+    float: left;
+    display: inline;
+    margin-right: 29px;
+    cursor: pointer;
+    background-position: -100px -70px;
+}
+.skill-u1 li img {
+    width: 71px;
+    height: 71px;
+    background: #000;
+    margin: 8px 0 0 11px;
+    border-radius: 50%;
+}
+.show-list {
+    display: none;
+    padding-left: 21px;
+    position: relative;
+    min-height: 150px;
+}
+.skill-name b {
+    font-size: 16px;
+    color: #424242;
+    margin-right: 50px;
+}
+.skill-name span {
+    margin: 0 6px;
+    color: #424242;
+    font-size: 14px;
+}
+.skill-desc {
+    font-size: 14px;
+    color: #535252;
+    margin: 20px 15px 0 0;
+    min-height: 70px;
+    line-height: 20px;
+}
+.rs {
+    width: 408px;
+    margin-left: 20px;
+}
+.tb3 {
+    background-position: -60px 0;
+    margin: -2px 8px 0 0;
+}
+.sugg-u1 {
+    padding-top: 20px;
+    height: 187px;
+}
+.sugg-u1 li {
+    width: 33.3%;
+    height: 75px;
+    border-radius: 5px;
+    float: left;
+    display: inline;
+    position: relative;
+    text-align: center;
+}
+.sugg-u1 li .sugg-pic1 {
+    width: 45px;
+    height: 53px;
+    margin: 0 auto;
+}
+.sugg-u1 li p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #535252;
+}
+.sugg-u1 li p em {
+    display: block;
+    font-size: 16px;
+    color: #424242;
+    font-weight: 700;
+    margin: 12px 0;
+}
+.sugg-tips {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    width: 365px;
+    padding: 10px;
+    background: #f5f5f5;
+    line-height: 20px;
+    color: #484848;
+    margin: 0 auto;
+}
+.tb4 {
+    background-position: -90px 0;
+    margin: -1px 8px 0 0;
+}
+.sugg-name span {
+    display: block;
+}
+.sugg-info2 {
+    position: relative;
+    overflow: hidden;
+    height: 104px;
+    background: #fff;
+    border: solid 1px #e5e5e5;
+    margin-bottom: 36px;
+}
+.sugg-info2 {
+    padding-left: 20px;
+    padding-top: 16px;
+}
+.sugg-info2 p {
+    display: inline-block;
+    float: left;
+    color: #6d6d6f;
+}
+.sugg-info2 p.sugg-name {
+    line-height: 24px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.sugg-skill {
+    width: 92px;
+    height: 88px;
+    float: left;
+    margin-right: 22px;
+    display: inline;
+    cursor: pointer;
+    background-position: 0 -70px;
+}
+.sugg-info2 p {
+    display: inline-block;
+    float: left;
+    color: #6d6d6f;
+}
+.sugg-skill img {
+    width: 71px;
+    height: 71px;
+    background: #000;
+    margin: 8px 0 0 11px;
+    border-radius: 50%;
+}
+.sugg-info2 p.sugg-name {
+    line-height: 24px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.sugg-skill:last-child {
+    margin-right: 0;
+}
+.tb6 {
+    background-position: -120px 0;
+    margin: -2px 0px 0 0px;
+}
+.equip-hd {
+    width: 100%;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    background: #f1f1f1;
+}
+.equip-hd li {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 29px;
+    border-bottom: solid 3px transparent;
+    cursor: pointer;
+}
+.equip-hd li span {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    height: 20px;
+    border-right: solid 1px #e1e1e1;
+}
+.equip-hd .curr {
+    border-bottom-color: #f3c258;
+}
+.equip-bd {
+    position: relative;
+    height: 320px;
+    background: #fff;
+    border: solid 1px #e1e1e1;
+    /* overflow: hidden; */
+}
+.equip-list {
+    width: 120%;
+    padding: 27px 0 0 20px;
+}
+.equip-list li {
+    width: 92px;
+    height: 88px;
+    float: left;
+    margin: 0 44px 14px 0;
+    display: inline;
+    cursor: pointer;
+    background-position: 0 -70px;
+    position: relative;
+}
+.equip-list li img {
+    width: 71px;
+    height: 71px;
+    background: #000;
+    margin: 8px 0 0 11px;
+    border-radius: 50%;
+}
+.equip-list li a:hover .itemFromTop {
+    display: block;
+}
+.itemFromTop .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.itemFromTop {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    background: rgba(0,0,0,.9);
+    opacity: 0.9;
+    border: 1px solid #459ef4;
+    width: 213px;
+    padding: 24px 15px 24px 33px;
+    z-index: 100;
+    font-family: "microsoft yahei";
+}
+.itemFromTop .item-title {
+    height: 74px;
+}
+.itemFromTop .item-title img {
+    float: left;
+    width: 74px;
+    height: 74px;
+    margin-right: 15px;
+    border-radius: 0;
+}
+.itemFromTop .item-title .cons {
+    float: left;
+    margin-left: 6px;
+}
+.itemFromTop .item-title h4 {
+    text-indent: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #23ff28;
+    line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-indent: 0;
+}
+.itemFromTop .item-title .cons p {
+    text-indent: 0;
+    font-size: 14px;
+    color: #da951c;
+    line-height: 30px;
+}
+.itemFromTop .item-desc {
+    text-indent: 0;
+    padding: 12px 0;
+    color: #369ff9;
+    font-size: 14px;
+    line-height: 22px;
+}
+.itemFromTop .item-desc p {
+    margin-bottom: 10px;
+}
+.equip-tips {
+    position: absolute;
+    bottom: 12px;
+    left: 10px;
+    width: 365px;
+    padding: 10px;
+    background: #f5f5f5;
+    line-height: 20px;
+    color: #484848;
+    margin: 0 auto;
+}
+.tb5 {
+    background-position: -150px 0;
+    width: 40px;
+    margin: -3px 8px 0 0;
+}
+.hero-info-box {
+    position: relative;
+    height: 152px;
+    background: #fff;
+}
+.hero-hd {
+    width: 100%;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    background: #f1f1f1;
+}
+.hero-hd .curr {
+    border-bottom-color: #f3c258;
+}
+.hero-hd li {
+    position: relative;
+    float: left;
+    width: 257px;
+    height: 29px;
+    border-bottom: solid 3px transparent;
+    cursor: pointer;
+}
+.hero-hd li span {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    height: 20px;
+    border-right: solid 1px #e1e1e1;
+}
+.hero-info {
+    position: relative;
+    display: none;
+    height: 118px;
+    border: solid 1px #e1e1e1;
+    overflow: hidden;
+}
+.hero-f1 {
+    padding: 45px 0 0 22px;
+    width: 136px;
+    line-height: 22px;
+    color: #333;
+    font-size: 18px;
+}
+.hero-f1 i {
+    width: 30px;
+    height: 30px;
+    margin: -3px 12px 0 0;
+}
+.hero-f1 i.hr1 {
+    background-position: 0 -30px;
+}
+.hero-list {
+    padding-top: 20px;
+    position: relative;
+    z-index: 10;
+}
+.hero-list li {
+    float: left;
+    width: 65px;
+    height: 67px;
+    margin-right: 25px;
+    border: solid 4px #7a7a7a;
+    border-radius: 0 16px;
+    overflow: hidden;
+}.hero-list li img {
+     width: 67px;
+     height: 69px;
+     border-radius: 0 15px;
+     margin-left: -1px;
+     margin-top: -1px;
+ }
+.hero-list-desc {
+    position: absolute;
+    top: 37%;
+    left: 356px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    width: 410px;
+}
+.hero-list .cur {
+    border: solid 4px #f3c258;
+}

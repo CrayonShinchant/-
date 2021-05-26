@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+div {
+    display: block;
+}
+body {
+    background: #fff;
+    font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+    color: #323235;
+}
+.header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-width: 1280px;
+    height: 84px;
+    z-index: 99;
+    background: #000;
+    background: rgba(0,0,0,0.8);
+    overflow: hidden;
+    transition: height 0.5s;
+}
+.tganime-header-fix {
+    transform-origin: top left;
+}
+.header:hover{
+    height: 285px;
+}
+.header-inner {
+    width: 1200px;
+    height: 84px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    left: 0;
+    top: 13px;
+    z-index: 100;
+    width: 200px;
+    height: 58px;
+    overflow: hidden;
+}
+.pa {
+    position: absolute;
+}
+.main-nav {
+    width: 790px;
+    padding-left: 230px;
+}
+.clearfix {
+    zoom: 1;
+}
+.main-nav li {
+    float: left;
+    width: 185px;
+    height: 84px;
+    text-align: center;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.main-nav li:hover{
+    border-bottom: orange solid;
+    background-image: linear-gradient(rgba(255,255,255,.3),rgba(255,255,0,.4));
+}
+ul, ol {
+    list-style: none;
+}
+.main-nav a {
+    display: block;
+    width: 180px;
+    height: 64px;
+    padding: 20px 0 0;
+    color: #c9c9dd;
+    font-size: 18px;
+    line-height: 30px;
+}
+a {
+    text-decoration: none;
+    color: #363636;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+}
+em, i, b {
+    font-style: normal;
+}
+.main-nav em {
+    display: block;
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #858792;
+}
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    min-width: 1280px;
+}
+.kv-bg {
+    background-image: url(../img/index.jpg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1100px;
+    background-repeat: no-repeat;
+    background-position: center top;
+   z-index: -1;
+}
+.sub-nav {
+    position: absolute;
+    top: 83px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    background: rgba(0,0,0,0.03);
+    z-index: 3;
+    transition: all .3s ease;
+    overflow: hidden;
+    height: 285px;
+    box-sizing: border-box;
+}
+.sub-nav-inner {
+    width: 790px;
+    height: 240px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding: 15px 0 30px 50px;
+}
+
+.down-nav {
+    float: left;
+    display: inline;
+    width: 60px;
+    padding: 5px 62px 0;
+    text-align: center;
+    white-space: nowrap;
+    list-style: none;
+}
+.down-nav a {
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    padding: 0;
+    font-size: 14px;
+    color: #c9c9dd;
+}
+.down-nav a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+.header-dialog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+.dia-weiquan {
+    width: 306px;
+    height: 297px;
+    background: url(../img/weiquan.png);
+}
+.dia-weiqxin {
+    width: 306px;
+    height: 297px;
+    background: url(../img/weixin.png);
+}
+.dia-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: url(../img/close.png);
+}

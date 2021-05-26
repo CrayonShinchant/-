@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tao.dao.ItemDao">
+    <select id="searchAllItem" resultType="com.tao.domain.Item">
+        select * from equip;
+    </select>
+    <select id="searchAttack" resultType="com.tao.domain.Item">
+        select * from equip where id in(1,2,3,4,5,6,7,8,9,10,11,12,16,17,31,32,33,43,44,45,49,61,62,102,105,103);
+    </select>
+    <select id="searchFashu" resultType="com.tao.domain.Item">
+        select * from equip where id in (15,28,26,46,48,57,58,59,60,88,89,90,91,92,94,95,96,97,98,99,100,101,104,93);
+    </select>
+    <select id="searchDefend" resultType="com.tao.domain.Item">
+        select * from equip where id in(13,14,18,19,20,21,25,50,51,52,71,72,73,74,75,76,77,78,79,81,82,83,84,85,86);
+    </select>
+    <select id="searchMove" resultType="com.tao.domain.Item">
+        select * from equip where id in(56,66,67,68,69,70);
+    </select>
+    <select id="searchDaye" resultType="com.tao.domain.Item">
+        select * from equip where id in(53,54,55,63,65,23,24,22,27);
+    </select>
+    <select id="searchFuzhu" resultType="com.tao.domain.Item">
+        select * from equip where id in(29,30,34,35,36,37,38,39,40,41,42);
+    </select>
+    <select id="searchDetail" resultType="com.tao.domain.Item">
+        select * from equip where jname=#{jname}
+    </select>
+    <select id="searchOneItem" resultType="com.tao.domain.Item">
+        select * from equip where jname=#{jname}
+    </select>
+    <select id="searchInfo" resultType="com.tao.domain.Item">
+        select * from equip where jname in 
+        <foreach collection="list" item="items" open="(" close=")" separator=",">
+          #{items.jname}
+        </foreach>
+    </select>
+</mapper>

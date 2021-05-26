@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--&lt;!&ndash;声明视图解析器&ndash;&gt;-->
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+        <!--<property name="suffix" value=".html"></property>-->
+        <!--<property name="prefix" value="/WEB-INF/view/"></property>-->
+    <!--</bean>-->
+    <!--声明组件扫描器-->
+    <context:component-scan base-package="com.tao.controller"></context:component-scan>
+    <!--读取静态资源文件-->
+    <mvc:resources mapping="static/**" location="/static/"></mvc:resources>
+    <!--<mvc:default-servlet-handler></mvc:default-servlet-handler>-->
+    <!--声明注解驱动-->
+    <mvc:annotation-driven></mvc:annotation-driven>
+    <!--配置拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**/register.html"/>
+            <bean class="com.tao.interceptor.RegisterInterceptor"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**/registerSet.html"/>
+            <bean class="com.tao.interceptor.LoginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

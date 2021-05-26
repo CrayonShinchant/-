@@ -1,0 +1,54 @@
+/* 暂停时显示播放按钮 */
+.vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+    display: block;
+}
+
+/* 点击屏幕播放/暂停 */
+.video-js.vjs-playing .vjs-tech {
+    pointer-events: auto;
+}
+.v_dcontent {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.v_dplayer {
+    position: relative;
+    width: 750px;
+    height: 510px;
+    float: left;
+}
+.m {
+    width: 600px;
+    height: 400px;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bootom: 5%;
+}
+
+.tab_sct {
+    float: right;
+    width: 130px;
+    height: 400px;
+    margin-top: 52px;
+}
+.clearpt {
+    padding-top: 0px!important;
+}
+.tab_sct-head {
+    height: 26px;
+    width: 100%;
+    color: #000;
+    line-height: 26px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.v-new-txt {
+    color: #000;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 20px;
+}

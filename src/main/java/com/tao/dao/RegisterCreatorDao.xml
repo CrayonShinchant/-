@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tao.dao.RegisterCreatorDao">
+    <select id="checkCreator" resultType="com.tao.domain.Creators">
+        select * from author_Info where author_Name=#{author_Name};
+    </select>
+    <insert id="insertCreator">
+        insert into author_Info(author_Name,author_Pwd) values(#{author_Name},#{author_Pwd})
+    </insert>
+    <select id="loginCreator" resultType="com.tao.domain.Creators">
+        select * from author_Info where author_Name=#{author_Name} and author_Pwd=#{author_Pwd}
+    </select>
+    <update id="updateNick">
+        update author_Info set author_Nick = #{author_Nick} where author_Name=#{author_Name};
+    </update>
+    <update id="updateHeadImg">
+        update author_Info set head_Img=#{head_Img} where author_Name=#{author_Name}
+    </update>
+    <select id="getAllHero" resultType="com.tao.domain.Hero">
+        select * from hero_all
+    </select>
+
+
+</mapper>

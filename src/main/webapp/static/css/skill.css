@@ -1,0 +1,79 @@
+.item-types {
+    background: none;
+}
+.imgtextlist {
+    float: left;
+    width: 940px;
+    padding: 30px 0 0;
+    margin-left: -14px;
+    margin-right: -20px;
+    position: relative;
+}
+.spell-list {
+    float: left;
+    width: 43%;
+    padding-left: 16px;
+    margin-right: 0;
+    border-right: 1px solid #F0F0F0;
+}
+.imgtextlist li {
+    float: left;
+    width: 116px;
+    height: 120px;
+    margin-bottom: 22px;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.imgtextlist .current {
+    color: #00A383;
+}
+.imgtextlist img {
+    display: block;
+    margin: 0 auto 7px;
+    width: 85px;
+    height: 85px;
+    border-radius: 10px 0 10px 0;
+    border: 3px solid #1E84E7;
+}
+.imgtextlist .current img {
+    border: 3px solid #00A383;
+}
+.spell-defail {
+    float: left;
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.spell-title {
+    overflow: hidden;
+    zoom: 1;
+}
+.spell-title img {
+    float: left;
+    margin-right: 20px;
+    width:auto;
+    height: auto;
+}
+.spell-title h4 {
+    float: left;
+    width: 60%;
+    font-size: 16px;
+    color: #00A383;
+    line-height: 30px;
+}
+.spell-title .cons {
+    float: left;
+    width: 60%;
+    color: #9A9A9A;
+    line-height: 30px;
+    font-size: 14px;
+}
+.spell-desc {
+    padding: 20px 0;
+    line-height: 18px;
+    color: #333;
+    font-size: 14px;
+}

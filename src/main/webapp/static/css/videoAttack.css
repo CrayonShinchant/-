@@ -1,0 +1,201 @@
+.vcategory {
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.v-new-title {
+    width: 100%;
+    height: 30px;
+    padding-bottom: 40px;
+}
+
+.fl {
+    float: left;
+}
+
+#hero {
+    display: inline;
+    border: 0;
+    border-radius: 2px 2px 2px 2px;
+    width: 16px;
+    aspect-ratio: auto 16 / 24;
+    height: 24px;
+
+}
+
+.v-new-l {
+    margin-top: 3px;
+}
+
+.v-new-txt {
+    color: #000;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.v-select-roles, .v-select-hero {
+    position: relative;
+    width: 215px;
+    float: left;
+    margin-left: 28px;
+}
+
+.v-input-box {
+    margin-left: 20px;
+    float: left;
+    width: 140px;
+    overflow: hidden;
+    height: 30px;
+    background: #fff;
+    border-radius: 5px 0 0 5px;
+}
+
+.v-input-box input {
+    text-align: center;
+    width: 99%;
+    height: 27px;
+    line-height: 27px;
+    border: 0;
+    font-size: 14px;
+    color: #666;
+    padding-left: 10px;
+    outline: none;
+}
+
+.soso-go {
+    float: left;
+    width: 40px;
+    background: #3D8CCB;
+    border-radius: 0 5px 5px 0;
+    height: 28px;
+    padding: 2px 0 0px 5px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.soso-go .vicon-soso {
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+img {
+    display: inline;
+}
+
+.v-select-roles-all, .v-select-hero-all {
+    overflow: auto;
+    height: 220px;
+    width: 86%;
+    position: absolute;
+    top: 30px;
+    margin-left: 20px;
+    z-index: 22;
+    display: none;
+    padding: 0;
+}
+
+.v-select-roles-all li, .v-select-hero-all li {
+    padding: 5px 5px;
+    background: #fff;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.v-select-hero-all li:hover {
+    background: #666;
+    color: #fff;
+}
+
+.v-select-roles-all li:hover {
+    background: #666;
+    color: #fff;
+}
+
+.vlist {
+    overflow: hidden;
+    margin-right: -100px;
+    zoom: 1;
+    padding-left: 0px;
+    width: 1300px;
+}
+
+.vlist li {
+    cursor: pointer;
+    float: left;
+    margin-right: 21px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.hotcategory li {
+    margin-right: 22px;
+}
+
+.itemImg, .vlist li {
+    width: 182px;
+    height: 165px;
+    overflow: hidden;
+}
+
+.itemImg {
+    position: relative;
+}
+
+img {
+    display: inline;
+    border: 0;
+    border-radius: 2px 2px 2px 2px;
+    width: 182px;
+    height: 110px;
+}
+
+.vlist li img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.vList-views {
+    position: absolute;
+    top: 81px;
+    line-height: 23px;
+    height: 24px;
+    color: #fff;
+    width: 96%;
+    padding: 0 7px 0 4px;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.show {
+    width: auto;
+    height: auto;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.vlist-desc {
+    padding: 5px 5px;
+    overflow: hidden;
+    font-weight: bold;
+    position: absolute;
+    top: 112px;
+    height: 40px;
+    overflow: hidden;
+    left: 0;
+}
+
+.txtcol {
+    color: #616161;
+}

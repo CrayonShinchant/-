@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>召唤师技能——王者荣耀情报系统</title>
+    <link rel="shortcut icon" href="#"/>
+    <link type="text/css" rel="stylesheet" href="./css/hero.css">
+    <script type="text/javascript" src="./js/item.js"></script>
+    <link type="text/css" rel="stylesheet" href="./css/item.css">
+    <script type="text/javascript" src="./jquery/jquery3.5.js"></script>
+    <link type="text/css" rel="stylesheet" href="./css/skill.css">
+    <script type="text/javascript" src="./js/skill.js"></script>
+
+</head>
+<body>
+<div id="header" class="header tganime-header-fix">
+    <div class="header-nav">
+        <div class="header-inner">
+            <h1><img class="logo pa" src="./img/logo.png"></h1>
+            <ul class="main-nav clearfix">
+                <li>
+                    <a href="#" target="_blank" title="游戏资料">游戏资料
+                        <em>GAMEDATA</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="官方资讯">官方资讯
+                        <em>INFORMATION</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="内容中心">内容中心
+                        <em>CONTENTS</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="社区活动">社区活动
+                        <em>CONTENTS</em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 二级导航 -->
+        <div id="J_subNav" class="sub-nav">
+            <ul class="sub-nav-inner">
+                <li class="down-nav">
+                    <a href="introduce.html" target="_blank" title="游戏介绍">游戏介绍</a>
+                    <a href="hero.html" target="_blank" title="英雄介绍">英雄介绍</a>
+                </li>
+                <li class="down-nav">
+                    <a href="#" target="_blank" title="官方公告">官方公告</a>
+                    <a href="#" target="_blank" title="体验服公告">体验服公告</a>
+                </li>
+                <li class="down-nav">
+                    <a href="#" target="_blank" title="英雄攻略">英雄攻略</a>
+                    <a href="videoAttack.html" target="_blank" title="视频中心">视频中心</a>
+                    <a href="/kings/toLogin.do" target="_blank" title="作者入驻">作者入驻</a>
+                </li>
+                <li class="down-nav">
+                    <a id="wq" href="javascript:void(0)"  title="微信圈子">微信圈子</a>
+                    <a id="wx" href="javascript:void(0)"  title="微信公众号">微信公众号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="header-dialog">
+    <div class="weiquan pr" id="weiquan"
+         style="display: none;visibility: visible;position: fixed;z-index: 9999;left: 50%;top: 50%;margin-top: -148.5px;margin-left: -153px;"
+         data-milodialog="1" role="dialog" tabindex="-1">
+        <div class="dia-weiquan">
+            <a class="dia-close" href="javascript:void(0);" title="关闭"></a>
+        </div>
+    </div>
+    <div class="weixin pr" id="weixin"
+         style="display: none;visibility: visible;position: fixed;z-index: 9999;left: 50%;top: 50%;margin-top: -148.5px;margin-left: -153px;"
+         data-milodialog="1" role="dialog" tabindex="-1">
+        <div class="dia-weiquan">
+            <a class="dia-close" href="javascript:void(0);" title="关闭"></a>
+        </div>
+    </div>
+</div>
+<div id="_overlay_"
+     style="background-color: rgb(0, 0, 0); border-top: 1px solid rgb(230, 245, 255); position: absolute; height: 2577px; z-index: 9998; width: 100%; left: 0px; top: 0px; opacity: 0.7; display: none;"></div>
+<div class="wrapper">
+    <div class="zkcontent">
+        <div class="zk-con-box">
+            <div class="zk-con1 zk-con">
+                <div class="con1-pos">
+                    <i class="tb1 icon f1"></i>
+                    <a href="/kings/" target="_blank" title="王者荣耀情报首页">王者荣耀情报首页</a>
+                    <span>></span>
+                    <label>召唤师技能</label>
+                </div>
+                <h1 class="herolist-title">召唤师技能</h1>
+                <ul class="herolist-nav">
+                    <li >
+                        <a href="hero.html" target="_blank">英雄</a>
+                    </li>
+                    <li >
+                        <a href="item.html" target="_blank">局内道具</a>
+                    </li>
+                    <li class="current">
+                        <a href="skill.html" target="_blank">召唤师技能</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="herolist-box">
+                <div class="clearfix items-types">
+                    <ul id="spellList" class="imgtextlist spell-list">
+                        <li id="80104" class="current"><img
+                                src="//game.gtimg.cn/images/yxzj/img201606/summoner/80104.jpg" alt="惩击">
+                            <p>惩击</p>
+                        </li>
+                        <li id="80108"><img src="//game.gtimg.cn/images/yxzj/img201606/summoner/80108.jpg" alt="终结">
+                            <p>终结</p>
+                        </li>
+                        <li id="80110"><img src="//game.gtimg.cn/images/yxzj/img201606/summoner/80110.jpg" alt="狂暴">
+                            <p>狂暴</p>
+                        </li>
+                        <li id="80109"><img src="//game.gtimg.cn/images/yxzj/img201606/summoner/80109.jpg" alt="疾跑">
+                            <p>疾跑</p>
+                        </li>
+                        <li id="80102"><img src="//game.gtimg.cn/images/yxzj/img201606/summoner/80102.jpg"
+                                            alt="治疗术">
+                            <p>治疗术</p>
+                        </li>
+                        <li id="80105"><img src="//game.gtimg.cn/images/yxzj/img201606/summoner/80105.jpg" alt="干扰">
+                            <p>干扰</p>
+                        </li>
+                        <li id="80103"><img src="//game.gtimg.cn/images/yxzj/img201606/summoner/80103.jpg" alt="晕眩">
+                            <p>晕眩</p>
+                        </li>
+                        <li id="80107"><img src="//game.gtimg.cn/images/yxzj/img201606/summoner/80107.jpg" alt="净化">
+                            <p>净化</p>
+                        </li>
+                        <li id="80121"><img src="//game.gtimg.cn/images/yxzj/img201606/summoner/80121.jpg" alt="弱化">
+                            <p>弱化</p>
+                        </li>
+                        <li id="80115"><img src="//game.gtimg.cn/images/yxzj/img201606/summoner/80115.jpg" alt="闪现">
+                            <p>闪现</p>
+                        </li>
+                    </ul>
+                    <div id="spellDefail" class="spell-defail">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popPupItem" class="poppup-item" style="">
+    <div id="itemFromTop">
+        <div class="item-title clearfix">
+            <img src="" alt="" id="Jpic">
+            <div class="cons">
+                <h4 id="Jname"></h4>
+                <p id="Jprice"></p>
+                <p id="Jtprice"></p>
+            </div>
+        </div>
+        <div class="item-desc">
+            <div id="Jitem-desc1"></div>
+            <div id="Jitem-desc2"></div>
+        </div>
+    </div>
+</div>
+</div>
+<div>
+    <div id="gfooter" class="footer-wrap">
+        <div class="foot">
+            <div class="foot_cpright">
+                <div class="foot_lefts">
+                    <img src="./img/logo.png" id="foot_img">
+                </div>
+            </div>
+            <div class="foot_bottom">
+                @Produced by <b>软件工程三班IIB聂涛</b> All Rights Reserved<br>
+                @Designed by <b>软件工程三班IIB聂涛</b> Glory of King System
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

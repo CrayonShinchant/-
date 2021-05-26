@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创作者——王者荣耀情报系统</title>
+    <script type="text/javascript" src="./jquery/jquery3.5.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/registerSet.js"></script>
+    <link rel="shortcut icon" href="#" />
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
+    <link type="text/css" rel="stylesheet" href="./css/registerSet.css">
+    <script src="js/infoSet.js"></script>
+    <script src="js/video.js"></script>
+    <link href="./easyUI/icon.css" rel="stylesheet" type="text/css">
+    <link href="./easyUI/easyui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./easyUI/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="./easyUI/jquery.easyui.min.js"></script>
+</head>
+
+<body>
+<div id="header" class="header tganime-header-fix">
+    <div class="header-nav">
+        <div class="header-inner">
+            <h1><img class="logo pa" src="./img/logo.png"></h1>
+            <ul class="main-nav clearfixs">
+                <li>
+                    <a href="#" target="_blank" title="游戏资料">游戏资料
+                        <em>GAMEDATA</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="官方资讯">官方资讯
+                        <em>INFORMATION</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="内容中心">内容中心
+                        <em>CONTENTS</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="社区活动">社区活动
+                        <em>CONTENTS</em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 二级导航 -->
+        <div id="J_subNav" class="sub-nav">
+            <ul class="sub-nav-inner">
+                <li class="down-nav">
+                    <a href="introduce.html" target="_blank" title="游戏介绍">游戏介绍</a>
+                    <a href="hero.html" target="_blank" title="英雄介绍">英雄介绍</a>
+                </li>
+                <li class="down-nav">
+                    <a href="#" target="_blank" title="官方公告">官方公告</a>
+                    <a href="#" target="_blank" title="体验服公告">体验服公告</a>
+                </li>
+                <li class="down-nav">
+                    <a href="#" target="_blank" title="英雄攻略">英雄攻略</a>
+                    <a href="videoAttack.html" target="_blank" title="视频中心">视频中心</a>
+                    <a href="/kings/toLogin.do" target="_self" title="作者入驻">作者入驻</a>
+                </li>
+                <li class="down-nav">
+                    <a id="wq" href="javascript:void(0)"  title="微信圈子">微信圈子</a>
+                    <a id="wx" href="javascript:void(0)"  title="微信公众号">微信公众号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="g-content-contain">
+    <div class="left-selection g-autofixheight f-f1">
+        <ul class="select-list">
+            <li class="no-spread">
+                <a href="javascript:void(0)" onclick="loadPage('infoSet.html')">
+                    <div class="option-icons option-icon1"></div>
+                    <div class="option-text">个人主页</div>
+                </a>
+            </li>
+            <li class="spread">
+                <ul class="spread-list">
+                    <li class="spread-title spread-item">
+                        <div class="option-icons option-icon2"></div>
+                        <div class="option-text">投稿</div>
+                    </li>
+                    <li class="spread-item" data-id="picture">
+                        <a href="#">
+                            <span class="select-icon"></span>
+                            <div class="option-text"  onclick="loadPage('article.html')">图文投稿</div>
+                        </a>
+                    </li>
+                    <li class="spread-item" data-id="video">
+                        <a href="javascript:void(0)" onclick="loadPage('video.html')">
+                            <span class="select-icon"></span>
+                            <div class="option-text">视频投稿</div>
+                        </a>
+                    </li>
+                    <li class="spread-item" >
+                        <a href="javascript:void(0)" onclick="removeCreator()">
+                            <span class="select-icon"></span>
+                            <div class="option-text">退出登录</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="page-set"></div>
+</div>
+<div class="header-dialog">
+    <div class="weiquan pr" id="weiquan"
+         style="display: none;visibility: visible;position: fixed;z-index: 9999;left: 50%;top: 50%;margin-top: -148.5px;margin-left: -153px;"
+         data-milodialog="1" role="dialog" tabindex="-1">
+        <div class="dia-weiquan">
+            <a class="dia-close" href="javascript:void(0);" title="关闭"></a>
+        </div>
+    </div>
+    <div class="weixin pr" id="weixin"
+         style="display: none;visibility: visible;position: fixed;z-index: 9999;left: 50%;top: 50%;margin-top: -148.5px;margin-left: -153px;"
+         data-milodialog="1" role="dialog" tabindex="-1">
+        <div class="dia-weiquan">
+            <a class="dia-close" href="javascript:void(0);" title="关闭"></a>
+        </div>
+    </div>
+</div>
+<div id="_overlay_"
+     style="background-color: rgb(0, 0, 0); border-top: 1px solid rgb(230, 245, 255); position: absolute; height: 2577px; z-index: 9998; width: 100%; left: 0px; top: 0px; opacity: 0.7; display: none;"></div>
+<div class="wapper">
+    <div class="kv-bg-container">
+        <div class="kv-bg"></div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

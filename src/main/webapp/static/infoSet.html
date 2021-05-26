@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/infoSet.css">
+    <script type="text/javascript" src="jquery/jquery3.5.js"></script>
+    <script src="js/infoSet.js"></script>
+    <title>个人页面</title>
+    <link href="./easyUI/icon.css" rel="stylesheet" type="text/css">
+    <link href="./easyUI/easyui.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./easyUI/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="./easyUI/easyui-lang-zh_CN.js"></script>
+</head>
+
+<body>
+
+<div class="W_main_a">
+    <div class="W_follow_bg S_bg4">
+        <div class="content-title">
+            <span class="content-title-icon"></span>
+            <p class="content-title-text">个人信息</p>
+        </div>
+        <div class="W_account_event">
+            <div class="head_img">
+                <img id="head_Img" alt="头像"><br>
+            </div>
+            <div class="file">
+                上传头像<input id="file" type="file" name="myfiles"/>
+            </div>
+            <div class="account_fold SW_fun_bg">
+                <ul class="account_title clearfix">
+                    <li class="title_name W_fb">用户名</li>
+                    <li class="title_content S_txt2"></li>
+                </ul>
+            </div>
+            <div class="account_fold SW_fun_bg">
+                <ul class="account_title clearfix">
+                    <li class="title_name W_fb">昵称</li>
+                    <li class="title_content S_txt2"></li>
+                    <li class="title_option W_tr">
+                        <a href="javascript:void(0)" class="set_opt" node-type="drawer_toggle"
+                           action-data="open=编辑&close=收起">编辑</a>
+                    </li>
+                </ul>
+                <!--昵称编辑  -->
+                <div class="unfold_content clearfix" style="display:none" node-type="content">
+                    <div class="acc_form">
+                        <div class="info_item clearfix">
+                            <div class="tit">现昵称</div>
+                            <div class="inp w_lh30" node-type="oldnick"></div>
+                            <div class="tips">
+                            </div>
+                        </div>
+                        <div class="info_item clearfix">
+                            <div class="tit">新昵称</div>
+                            <div class="inp">
+                                <input class="W_input" type="text" node-type="nickname" name="author_Nick">
+                            </div>
+                            <div class="tips" node-type="nickname_tip">
+                            </div>
+                        </div>
+                        <div class="info_item btn_item clearfix">
+                            <div class="inp">
+                                <a class="W_btn_a" node-type="btn_submit"
+                                   action-type="btn_submit"><span>保存</span></a>
+                                <a class="W_btn_b" href="javascript:void(0)"
+                                   action-type="btn_cancel"><span>关闭</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="account_fold SW_fun_bg">
+                <ul class="account_title clearfix">
+                    <li class="title_name W_fb">密码</li>
+                    <li class="title_content S_txt2"></li>
+                    <li class="title_option W_tr">
+                        <a href="#">修改密码»</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
